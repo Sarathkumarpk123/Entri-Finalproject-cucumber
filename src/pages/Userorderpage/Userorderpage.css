@@ -1,0 +1,82 @@
+/* Userorderpage.css */
+
+.user-order-pages {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+   
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .errors {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .order-itemm {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .order-itemm h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .food-itemm {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .food-item-imagee {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  .food-item-detailss {
+    flex-grow: 1;
+  }
+  
+  .food-item-detailss h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 5px;
+  }
+  
+  .food-item-detailss p {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+  }
+  
+  .remove-item-buttonn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .remove-item-buttonn:hover {
+    background-color: #e60000;
+  }
+  

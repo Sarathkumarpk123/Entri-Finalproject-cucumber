@@ -1,0 +1,105 @@
+.cart {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .cart-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .cart-item button {
+    padding: 5px 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover {
+    background-color: #ff7875;
+  }
+  
+  .cart-total {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .cart-total h3 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item p,
+    .cart-item input,
+    .cart-item button {
+      margin-bottom: 10px;
+    }
+  
+    .cart-item input[type="number"] {
+      width: 100%;
+    }
+  
+    .cart-total {
+      text-align: center;
+    }
+    /* Ensure Cart CSS is specific enough */
+.cart-item img {
+  width: 150px; /* Ensure all images have the same width */
+  height: 150px; /* Ensure all images have the same height */
+  object-fit: cover; /* Ensure the image covers the whole area without stretching */
+  border-radius: 8px;
+  margin-right: 20px;
+}
+  
+  /* Optional: Add a fallback style for images */
+  .cart-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+      
+  }
+  

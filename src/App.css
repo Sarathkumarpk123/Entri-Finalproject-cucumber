@@ -1,0 +1,15 @@
+/* Apply these styles to the main container (div wrapping Navbar, Routes, and Footer) */
+.headpart {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh; /* Ensure the container takes the full height of the viewport */
+    
+  }
+  
+  footer {
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  .user-order-container {
+    flex-grow: 1;
+    display: block;
+  }

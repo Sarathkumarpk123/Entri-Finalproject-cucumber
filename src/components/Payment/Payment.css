@@ -1,0 +1,41 @@
+.payment-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;  /* Make input fields take full width of container */
+  max-width: 100%; /* Ensure the input doesn't exceed its container */
+  padding: 12px; /* Increased padding to add more height */
+  margin: 12px 0; /* Adjusted margin for better spacing */
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  font-size: 16px; /* Slightly larger font for better readability */
+}
+
+button {
+  padding: 12px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for button */
+}

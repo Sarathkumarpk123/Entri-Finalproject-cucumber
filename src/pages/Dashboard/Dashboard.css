@@ -1,0 +1,167 @@
+/* Dashboard.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.article {
+  max-width: 800px; /* Limit the width of the article */
+  margin: 0 auto; /* Center the article */
+  padding: 20px;
+  background-color: #fff; /* White background for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.user-card {
+  border: 1px solid #ddd; /* Light border for each user card */
+  padding: 15px;
+  margin: 15px 0; /* Space between user cards */
+  border-radius: 6px; /* Slightly rounded corners */
+  background-color: #f9f9f9; /* Light grey background for cards */
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.user-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.user-card h2 {
+  margin: 0 0 10px; /* Space below the user name */
+  color: #333; /* Darker color for the user name */
+}
+
+.user-card p {
+  margin: 5px 0; /* Space between paragraph elements */
+  color: #555; /* Dark grey for text */
+}
+
+button {
+  background-color: #ff4d4d; /* Red background for the button */
+  color: #fff; /* White text color */
+  border: none; /* Remove default border */
+  padding: 10px 15px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+p {
+  text-align: center; /* Centered text for no users found message */
+  color: #777; /* Light grey for the message */
+}
+
+/* Responsive Media Queries */
+
+/* Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .article {
+    padding: 30px;
+  }
+
+  .user-card {
+    padding: 20px;
+  }
+
+  .user-card h2 {
+    font-size: 22px; /* Increase font size for larger screens */
+  }
+
+  .user-card p {
+    font-size: 18px; /* Increase paragraph font size */
+  }
+
+  button {
+    padding: 12px 20px; /* Increase button padding */
+    font-size: 16px; /* Increase button font size */
+  }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 768px) {
+  .article {
+    padding: 20px;
+  }
+
+  .user-card {
+    padding: 15px;
+  }
+
+  .user-card h2 {
+    font-size: 20px; /* Increase font size for medium screens */
+  }
+
+  .user-card p {
+    font-size: 16px; /* Increase paragraph font size */
+  }
+
+  button {
+    padding: 10px 15px; /* Maintain button padding */
+    font-size: 15px; /* Increase button font size */
+  }
+}
+
+/* Small Devices (Phones, 480px and up) */
+@media (max-width: 480px) {
+  .article {
+    padding: 15px;
+  }
+
+  .user-card {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .user-card h2 {
+    font-size: 18px; /* Smaller font size for user names */
+  }
+
+  .user-card p {
+    font-size: 14px; /* Smaller paragraph font size */
+  }
+
+  button {
+    padding: 8px 10px; /* Smaller button padding */
+    font-size: 14px; /* Smaller button font size */
+  }
+}
+
+/* Extra Small Devices (Very small phones, less than 320px) */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 20px; /* Smaller heading for very small screens */
+  }
+
+  .article {
+    padding: 10px;
+  }
+
+  .user-card {
+    padding: 8px; /* Further reduce padding for very small screens */
+  }
+
+  .user-card h2 {
+    font-size: 16px; /* Further reduce font size for user names */
+  }
+
+  .user-card p {
+    font-size: 12px; /* Further reduce paragraph font size */
+  }
+
+  button {
+    padding: 6px 8px; /* Smaller button padding */
+    font-size: 12px; /* Smaller button font size */
+  }
+}

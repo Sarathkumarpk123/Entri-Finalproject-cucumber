@@ -1,0 +1,140 @@
+/* Style for the congratulations screen */
+.congrats-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.congrats-screen h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: popIn 1.5s infinite ease-in-out;
+}
+
+.congrats-screen p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Celebration pop animation */
+@keyframes popIn {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+/* Style for the view-form with a user image, animations, and enhanced layout */
+.view-form {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Profile image styling */
+.user-profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-profile-img:hover {
+  transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Confetti styling */
+.confetti {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #ff9800;
+  animation: confetti-fall 2s infinite;
+}
+/* Animation for each letter in the welcome message */
+.animated-letter {
+  display: inline-block;
+  font-size: 2rem; /* Adjust font size as needed */
+  color: #071302; /* Change to your preferred color */
+  transition: transform 0.3s ease;
+  animation: bounce 0.5s forwards; /* Animation effect */
+}
+
+/* Keyframes for letter bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Additional styles for the welcome message */
+h2 {
+  color: #d68111; /* Example color for the welcome message */
+  text-align: center;
+}
+
+@keyframes confetti-fall {
+  0% {
+    top: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+/* Keyframes for fading in elements */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Celebration text animation */
+.celebration {
+  color: #ff9800;
+  position: relative;
+  animation: celebration-pop 2s infinite ease-in-out;
+}
+
+@keyframes celebration-pop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}

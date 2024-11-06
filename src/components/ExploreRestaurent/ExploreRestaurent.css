@@ -1,0 +1,23 @@
+/* ExploreRestaurent.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Set a clean font for the body */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark gray color for the heading */
+    margin-top: 20px; /* Space above the heading */
+    font-size: 2.5rem; /* Increase font size */
+}
+
+.restcontent {
+    text-align: center; /* Center the paragraph */
+    color: #666; /* Lighter gray color for the text */
+    font-size: 1.2rem; /* Set font size */
+    margin: 10px auto; /* Center with auto margin */
+    max-width: 600px; /* Limit the width */
+}
+
+

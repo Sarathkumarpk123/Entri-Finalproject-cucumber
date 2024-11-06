@@ -1,0 +1,239 @@
+/* Base Styles (Desktop) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f2f3;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li.active, .navbar-menu li:hover {
+    color: #007bff;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-button {
+    padding: 5px 3px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #0056b3;
+}
+
+.imageprofile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imageprofile:hover {
+    transform: scale(1.1);
+}
+
+.navbar-profile {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+    visibility: hidden; /* Make it invisible initially */
+}
+
+.nav-profile-dropdown li {
+    padding: 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-profile-dropdown li:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.imageicon {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-count {
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    right: -10px;
+}
+
+.navbar span {
+    cursor: pointer;
+}
+
+/* Show dropdown when state is active */
+.navbar-profile:hover .nav-profile-dropdown,
+.navbar-profile .nav-profile-dropdown.active {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible; /* Make dropdown visible */
+}
+
+/* Responsive Styles */
+
+/* Adjust styles for tablet devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .nav-profile-dropdown {
+        top: 40px;
+        right: 10px;
+        width: 100px;
+    }
+}
+
+/* Adjust styles for mobile devices */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-menu {
+        display: none; /* Hide menu items on small screens */
+    }
+
+    .navbar-button {
+        padding: 5px 3px;
+        font-size: 14px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .imageprofile {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cart-count {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        top: -5px;
+        right: -5px;
+    }
+
+    .nav-profile-dropdown {
+        top: 40px;
+        right: 10px;
+        width: 100px; /* Adjust width for smaller screens */
+    }
+   
+}
+.navbar-search {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+  }
+  
+  .search-input {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    padding: 4px ;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3px;
+    
+  }
+  
+  .search-button:hover {
+    background-color: darkgreen;
+  }
+  

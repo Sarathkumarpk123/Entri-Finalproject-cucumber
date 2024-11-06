@@ -1,0 +1,47 @@
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .food-item {
+    width: 300px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .food-details {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .cart-items {
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    margin-bottom: 10px;
+  }
+  .food-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }

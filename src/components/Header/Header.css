@@ -1,0 +1,164 @@
+/* Header Styles */
+.header {
+    background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(177, 163, 163);
+}
+
+.header-contents {
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    opacity: 0;
+    transform: translateY(50px); /* Start off slightly below its final position */
+    animation: fadeSlideUp 2s ease-out forwards; /* Trigger the animation */
+}
+
+.header p {
+    font-size: 1rem;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    animation: fadeIn 2s 0.5s ease-out forwards; /* Fade in with a slight delay */
+    opacity: 0;
+    color: aliceblue;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End position */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Improved Button Styling */
+.header-contents button {
+    font-size: 16px;
+    border: none; /* Remove border for a clean look */
+    border-radius: 25px;
+    padding: 12px 35px;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    background-color: #ff6b6b; /* Eye-catching background color */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.header-contents button:hover {
+    background-color: #ff4c4c; /* Slightly darker shade on hover */
+    transform: translateY(-3px); /* Lift button on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.header-contents button:active {
+    background-color: #e03a3a; /* Even darker shade on click */
+    transform: translateY(0); /* Reset lift when clicked */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Soften shadow on click */
+}
+
+/* Responsive Media Queries */
+
+/* For large screens (above 1200px) */
+@media (min-width: 1200px) {
+    .header h2 {
+        font-size: 3rem;
+    }
+    
+    .header p {
+        font-size: 1.2rem;
+    }
+    
+    .header {
+        height: 90vh;
+    }
+}
+
+/* For medium screens (768px to 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .header p {
+        font-size: 1.1rem;
+    }
+    
+    .header {
+        height: 70vh;
+    }
+}
+
+/* For small screens (below 768px) */
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .header {
+        height: 60vh;
+    }
+
+    .header-contents {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .header-contents button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+
+/* For extra small screens (below 480px) */
+@media (max-width: 480px) {
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.85rem;
+    }
+
+    .header {
+        height: 50vh;
+    }
+
+    .header-contents {
+        padding: 10px;
+    }
+
+    .header-contents button {
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+}
